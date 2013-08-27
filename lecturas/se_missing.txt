@@ -1,0 +1,8 @@
+﻿¿Porque el autor pone en duda la existencia de la disciplina de ingenieria de software?
+
+El autor pone en duda la disciplica por las siguientes razones:
+Se necesita más matemáticas y teoría.
+Es area que esta dominado por la nuevas tendencias que generan mucho interes, pero luego se pierden.
+Se trata a la ingenieria como un area multiuso de la investigación y no como una profesión regulada.
+No se distinguen fuertemente entre los problemas de ingeniería, tecnología, gestión y las cuestiones del dominio del negocio.
+Al momento de aplicarse se enfoca más en solucionar problemas comunes que se resuelven con tecnicas y terminos específicos, cuando debería ser todo más general.
