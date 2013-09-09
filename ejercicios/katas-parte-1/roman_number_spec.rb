@@ -17,7 +17,7 @@ describe RomanNumber do
     it 'should return II when adding I and I' do
       i = RomanNumber.new('I')
       result = i.add i
-      result.should eq ('II')
+      result.should eq RomanNumber.new('II')
     end
 
   end
