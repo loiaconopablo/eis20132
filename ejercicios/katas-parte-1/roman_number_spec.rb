@@ -1,5 +1,8 @@
 require 'rspec'
+require 'simplecov'
+SimpleCov.start
 require_relative './roman_number.rb'
+
 
 describe RomanNumber do
 
