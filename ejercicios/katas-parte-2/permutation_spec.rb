@@ -1,4 +1,6 @@
 require 'rspec'
+require 'simplecov'
+SimpleCov.start
 require_relative './permutation.rb'
 
 describe Permutacion do 

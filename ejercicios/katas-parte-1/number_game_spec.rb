@@ -1,4 +1,6 @@
 require 'rspec'
+require 'simplecov'
+SimpleCov.start
 require_relative 'number_game.rb'
 
 describe NumberGame do
@@ -13,7 +15,7 @@ describe NumberGame do
 
 	describe 'position 3' do 
 			
-		it 'Simulando que toca la posicion 3, tiene que decir "Fizz" en vez del número' do
+		it 'Simulando que toca la posicion 3, tiene que decir "Fizz" en vez del numero' do
 			game = NumberGame.new(3)
 			game.position.should eq "Fizz"
 		end
@@ -21,7 +23,7 @@ describe NumberGame do
 
 	describe 'position 5' do 
 
-		it 'Simulando la posicion 10, tiene que decir "Buzz" en vez del número' do
+		it 'Simulando la posicion 10, tiene que decir "Buzz" en vez del numero' do
 			game = NumberGame.new(10)
 			game.position.should eq "Buzz"
 		end

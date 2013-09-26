@@ -1,0 +1,40 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/pablo/Escritorio/Elementos de Ingenieria de Software/eis20132/ejercicios/katas-parte-1/roman_number.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1380163704
+  }
+}
