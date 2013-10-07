@@ -1,0 +1,10 @@
+<h1>Nueva Consulta </h1> 
+<% form_for(@consulta, '/consultas/create') do |f| %>
+  	<%= f.label :title %>
+ 	<%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_area :description, :class => "input-block-level" %>
+  <br/>
+  <%= f.submit "Enviar Consulta", :class => "btn btn-primary" %>
+  <%= link_to 'Cancel', url_for(:consultas, :my), :class => "btn btn-secondary" %>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>Editar Consulta</h1>
+<% form_for(@consulta, "/consultas/update/#{@consulta.id}") do |f| %>
+
+  <%= partial 'consultas/form', :locals => { :f => f } %>
+
+  <%= f.submit "Save", :class => "btn btn-primary" %>
+  <%= link_to 'Cancel', url_for(:consultas, :my), :class => "btn btn-secondary" %>
+<% end %>

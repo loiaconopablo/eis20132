@@ -1,0 +1,29 @@
+<h1>Mis Consultas</h1>
+<table class="table table-bordered">
+	<tr>
+		<th>Title</th>
+		<th>Description</th>
+	</tr>
+	<% @consultas.each do | consulta| %>
+
+	<tr>
+			<td>
+			<%= consulta.title %>
+		</td>
+		<td>
+			<%= consulta.description %>
+		</td>		
+		<td>
+			<%= link_to 'Edit', url_for(:consulta, :edit, :consulta_id => consulta.id), :class => "btn btn-primary" %>
+			<%- form_tag url(:consulta, :destroy, :consulta_id => consulta.id), :method => :delete, :style => 'display:inline' do %>
+                <button type='submit' title="Delete offer" rel='tooltip' class="btn btn-secondary" >Delete
+                </button>
+       <% end %>
+		</td>	
+	</tr>
+
+  <% end %>
+
+
+
+</table>

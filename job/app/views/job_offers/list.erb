@@ -1,0 +1,35 @@
+<h1>Current Job Offers</h1>
+<table class="table table-bordered">
+	<tr>
+		<th>Title</th>
+		<th>Location</th>
+		<th>Category</th>
+		<th>Description</th>
+		<th>Actions</th>
+	</tr>
+	<% @offers.each do | offer| %>
+
+	<tr>
+		<td>
+			<%= offer.title %>
+		</td>
+		<td>
+			<%= offer.location %>
+		</td>
+		<td>
+			<%= offer.category %>
+		</td>
+		<td>
+			<%= offer.description %>
+		</td>		
+		<td>
+			<%= link_to 'Apply', url_for(:job_offers, :apply, :offer_id => offer.id), :class => "btn btn-primary" %>
+		</td>		
+		<td>
+			<%= link_to 'Consulta', url_for(:consultas, :new), :class => "btn btn-secondary" %>
+		</td>	
+	</tr>
+
+  <% end %>
+
+</table>
