@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite tests="26" failures="0" errors="0" time="1.492621" timestamp="2013-10-07T14:38:29-03:00">
+<testsuite tests="26" failures="0" errors="0" time="2.987831" timestamp="2013-10-07T21:20:50-03:00">
   <properties/>
-  <testcase classname="spec.app.controllers.home_controller_spec" name="HomeController default should return Comming soon!" time="0.592566"/>
-  <testcase classname="spec.app.controllers.job_offers_controller_spec" name="JobOffersController get :new should response ok and render job_offers/new" time="0.021833"/>
-  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should response ok" time="0.001772"/>
-  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should render users/login" time="0.001383"/>
-  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should response ok" time="0.001079"/>
-  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should render users/new" time="0.001360"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #id" time="0.002479"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #title" time="0.000173"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #location" time="0.000121"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #description" time="0.000115"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #category" time="0.000145"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #owner" time="0.000108"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #owner=" time="0.000107"/>
-  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer valid? should be false when title is blank" time="0.000703"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #id" time="0.000115"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #name" time="0.000100"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #crypted_password" time="0.000107"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #email" time="0.000097"/>
-  <testcase classname="spec.app.models.user_spec" name="User model should respond to #job_offers" time="0.000096"/>
-  <testcase classname="spec.app.models.user_spec" name="User valid? should be false when name is blank" time="0.163830"/>
-  <testcase classname="spec.app.models.user_spec" name="User valid? should be false when email is not valid" time="0.110789"/>
-  <testcase classname="spec.app.models.user_spec" name="User valid? should be false when password is blank" time="0.000459"/>
-  <testcase classname="spec.app.models.user_spec" name="User valid? should be true when all field are valid" time="0.132473"/>
-  <testcase classname="spec.app.models.user_spec" name="User authenticate should return nil when password do not match" time="0.215943"/>
-  <testcase classname="spec.app.models.user_spec" name="User authenticate should return nil when email do not match" time="0.081901"/>
-  <testcase classname="spec.app.models.user_spec" name="User authenticate should return the user when email and password match" time="0.160770"/>
+  <testcase classname="spec.app.controllers.home_controller_spec" name="HomeController default should return Comming soon!" time="1.254098"/>
+  <testcase classname="spec.app.controllers.job_offers_controller_spec" name="JobOffersController get :new should response ok and render job_offers/new" time="0.068925"/>
+  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should response ok" time="0.011128"/>
+  <testcase classname="spec.app.controllers.sessions_controller_spec" name="SessionsController get : should render users/login" time="0.002164"/>
+  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should response ok" time="0.005234"/>
+  <testcase classname="spec.app.controllers.users_controller_spec" name="UsersController get :register should render users/new" time="0.001936"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #id" time="0.045572"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #title" time="0.000149"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #location" time="0.000130"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #description" time="0.000138"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #category" time="0.000128"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #owner" time="0.000125"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer model should respond to #owner=" time="0.000134"/>
+  <testcase classname="spec.app.models.job_offer_spec" name="JobOffer valid? should be false when title is blank" time="0.004626"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #id" time="0.000184"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #name" time="0.000137"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #crypted_password" time="0.000000"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #email" time="0.000083"/>
+  <testcase classname="spec.app.models.user_spec" name="User model should respond to #job_offers" time="0.000149"/>
+  <testcase classname="spec.app.models.user_spec" name="User valid? should be false when name is blank" time="0.216240"/>
+  <testcase classname="spec.app.models.user_spec" name="User valid? should be false when email is not valid" time="0.207301"/>
+  <testcase classname="spec.app.models.user_spec" name="User valid? should be false when password is blank" time="0.000583"/>
+  <testcase classname="spec.app.models.user_spec" name="User valid? should be true when all field are valid" time="0.199765"/>
+  <testcase classname="spec.app.models.user_spec" name="User authenticate should return nil when password do not match" time="0.404506"/>
+  <testcase classname="spec.app.models.user_spec" name="User authenticate should return nil when email do not match" time="0.199757"/>
+  <testcase classname="spec.app.models.user_spec" name="User authenticate should return the user when email and password match" time="0.358021"/>
 </testsuite>

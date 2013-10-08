@@ -1,0 +1,14 @@
+Clase 07/10/2013 en Ingenieria de Software
+
+El comando Rake: hace lo que yo quiero que haga y se configura en el rakefile.
+
+Las pruebas pueden ser, unitarias, de integracion y de funcionabilidades. Siempre va haber mas pruebas unitarias (prueba la minima expresion, no tiene que tocar la base de datos, ni el fileServer, no tiene que depender de nadie).
+
+Otras pruebas pueden ser las pruebas de Stress y de Carga. Otra de usabilidad.
+
+Gherkin  es el lenguaje para escribir pruebas funcionales y de escenarios.
+Cucumbur es el que entiende y compara las expresiones con las pruebas del archivo features,, una vez que la encuentre,, ejecuta el codigo.
+
+Despues tenemos otra herramienta que se llama Capybara para que interprete las funciones que se usan simulando las acciones de una pagina web. Como apretar un boton, elegir un combo.
+
+

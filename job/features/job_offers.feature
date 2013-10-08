@@ -9,6 +9,7 @@ Feature: Job Offers
   Scenario: Create new offer
     Given I access the new offer page
     When I fill the title with "Programmer vacancy"
+    When I fill the category with "Category"
 		And confirm the new offer    
     Then I should see "Offer created"
     And I should see "Programmer vacancy" in My Offers
@@ -20,6 +21,14 @@ Feature: Job Offers
     And I save the modification
     Then I should see "Offer updated"
     And I should see "Programmer vacancy!!!" in My Offers
+
+  Scenario: Edit Category
+    Given I have "Programmer vacancy" offer in My Offers
+    And I edit it
+    And I set category to "NuevaCategory"
+    And I save the modification
+    Then I should see "Offer updated"
+    And I should see "NuevaCategory" in My Offers
 
   Scenario: Delete offer
     Given I have "Programmer vacancy" offer in My Offers

@@ -1,7 +1,7 @@
 JobVacancy::App.controllers :consultas do
   
   get :my do
-    @offers = JobOffer.find_by_owner(current_user)
+    @consultas_encontradas = Consulta.find_by_owner(current_user)
     render 'consultas/my_consultas'
   end    
 
@@ -10,9 +10,9 @@ JobVacancy::App.controllers :consultas do
   #   render 'job_offers/search'
   # end  
 
-  get :new do
-    @job_offer = JobOffer.get(params[:offer_id])
+  get :new, :with =>:offer_id  do
     @consulta = Consulta.new
+    @job_offer = JobOffer.get(params[:offer_id])
     render 'consultas/new'
   end
 
@@ -53,7 +53,7 @@ JobVacancy::App.controllers :consultas do
       redirect '/consultas/my'
     else
       flash.now[:error] = 'Title and Description are mandatory'
-      render 'consutlass/edit'
+      render 'consultas/edit'
     end  
   end
 

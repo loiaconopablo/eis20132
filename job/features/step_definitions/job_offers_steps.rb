@@ -19,6 +19,7 @@ When(/^I fill the title with "(.*?)"$/) do |offer_title|
   fill_in('job_offer[title]', :with => offer_title)
 end
 
+
 When(/^confirm the new offer$/) do
   click_button('Create')
 end
@@ -55,4 +56,34 @@ end
 
 Given(/^I save the modification$/) do
   click_button('Save')
+end
+
+When(/^I fill the category with "(.*?)"$/) do |arg1|
+  fill_in('job_offer[category]', :with => arg1)
+end
+
+Given(/^I set category to "(.*?)"$/) do |arg1|
+  fill_in('job_offer[category]', :with => arg1)
+end
+
+
+
+
+Given(/^there is a "(.*?)" offer$/) do |arg1|
+  JobOffer.all.destroy
+user = User.create(:email => 'offerer22@test.com',
+                   :name => 'Offerer2', 
+                   :password => "Passw0rd!")
+ job_offer = JobOffer.new
+ job_offer.title = title
+ job_offer.owner = user
+ job_offer.save
+end
+
+When(/^I click "(.*?)"$/) do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+When(/^write my  question$/) do
+  pending # express the regexp above with the code you wish you had
 end
