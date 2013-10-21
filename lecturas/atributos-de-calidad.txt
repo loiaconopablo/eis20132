@@ -1,0 +1,26 @@
+Disponibilidad - Availability
+
+La disponibilidad es la relación del tiempo de un sistema o componente es funcional para el tiempo total que se requiere o se espera que funcione. 
+
+Esto puede ser expresado como una proporción directa (por ejemplo, 9/10 o 0,9) o como un porcentaje (por ejemplo, 90%). También se puede expresar en términos de promedio de tiempo de inactividad por semana, mes o año o como tiempo total de inactividad durante una semana dada, meses o años. A veces, la disponibilidad se expresa en términos cualitativos, lo que indica el grado en que un sistema puede seguir trabajando cuando un componente significativo o un conjunto de componentes disminuye.
+
+Se puede medir como un porcentaje del tiempo de inactividad total del sistema durante un período predefinido . Disponibilidad se verá afectada por los errores del sistema , problemas de infraestructura , los ataques maliciosos y la carga del sistema. Las cuestiones clave para la disponibilidad son :
+	
+	A nivel físico: como el servidor de base de datos o servidor de aplicaciones puede fallar o dejar de responder, haciendo que todo el sistema falle. Considere cómo diseñar el soporte de tolerancia a fallos (failover)para los niveles en el sistema. 
+Por ejemplo , usar el equilibrio de carga de red para los servidores Web para distribuir la carga y evitar que se solicita dirigidas a un servidor que está abajo. 
+También, considere el uso de un mecanismo de RAID para mitigar el fracaso del sistema en caso de fallo de disco.
+El nivel de tolerancia a fallos dependerá de la técnica de almacenamiento utilizada y de la cantidad de veces que la información se encuentre replicada. No obstante, la tolerancia frente a errores nunca es absoluta, puesto que si fallasen todas las réplicas (mirrors) disponibles, incluyendo la copia original, la información quedaría incompleta y corrupta, y lo que es peor: irrecuperable.
+	
+	Ataques de Denegación de Servicio ( DoS - Denial of Service), es un ataque a un sistema de computadoras o red que causa que un servicio o recurso sea inaccesible a los usuarios legítimos.
+ Para reducir al mínimo la interrupción de los ataques de denegación de servicio, reducir la superficie de ataque, identificar el comportamiento malicioso , utilice instrumentación de la aplicación para exponer el comportamiento nintended e implementar la validación de datos completa . 
+Considere la posibilidad de utilizar los patrones Circuit Breaker y Bulkheads (para incrementar la flexibilidad del sistema .
+
+	El uso inadecuado de los recursos puede reducir la disponibilidad. Por ejemplo , los recursos adquiridos demasiado pronto y se mantuvo durante mucho tiempo causa agotamiento de recursos y una incapacidad para manejar las peticiones de usuarios concurrentes adicionales.
+
+	Errores o fallas en la aplicación pueden causar una amplia falla del sistema. Diseño para el manejo adecuado excepción con el fin de reducir errores de la aplicación de la que es difícil de recuperar.
+
+  	Las actualizaciones frecuentes, como los parches de seguridad y actualizaciones de aplicaciones de usuario, pueden reducir la disponibilidad del sistema. Identificar cómo va a diseñar para el tiempo de ejecución actualizaciones. Actualizar de manera manual cuando el servidor no tenga tanto uso.
+
+	Una falla en la red puede hacer que la aplicación no esté disponible. Tenga en cuenta cómo va a manejar las conexiones de red no confiables, por ejemplo,  mediante el diseño de los clientes con las capacidades que se conectan ocasionalmente.
+
+	Tenga en cuenta los límites de confianza dentro de la aplicación y asegurar que los subsistemas emplean alguna forma de control de acceso o servidor de seguridad, así como la validación de datos extensa, para aumentar la resistencia y la disponibilidad.
