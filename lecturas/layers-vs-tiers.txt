@@ -1,0 +1,20 @@
+Diferencia entre Layer y Tier-
+
+Ambos términos significan “de n capas"; pero existe una gran diferencia respecto al significado de cada uno de ellos. 
+	Una arquitectura n-Tier se refiere a la distribución física de las capas, es decir donde corre el código y los procesos. 
+	Una arquitectura n-Layer se refiere a la distribución lógica de las capas, es decir, como esta estructurado el código.
+
+Una aplicación n-tier – una aplicación web - que contiene 3 capas, una capa en el cliente, otra en el servidor IIS, y otra en la base de datos; es decir, el navegador, el servidor Web y el servidor de bases de datos corren en diferentes máquinas.
+
+Por otra parte, una arquitectura n-Layer define simplemente como se organiza el código. Normalmente incluye una capa de presentación, una capa de negocios, una capa de acceso a datos, una capa de entidades de negocio y una capa de datos – repositorio de datos. 
+Se trata de una distribución jerárquica de los roles y las responsabilidades para proporcionar una división efectiva de los problemas a resolver.
+El hecho de que se dividan las capas para organizar el código, no significa que las capas obligatoriamente deban corren en diferentes máquinas o que deben estrictamente correr en una sola máquina o en un único proceso. Lo que si es importante es que cada capa solo se ocupe de sus propias responsabilidades, y que estas no estén mezcladas.
+
+Por supuesto, nada impide, que cada layer se guarde en un tier, es decir, que se realice una separación física que coincida con la lógica; pero también podría, por ejemplo, compilarse los tres layers en un único tier.
+
+
+Fuentes: 
+ * http://icomparable.blogspot.com.ar/2008/10/arquitectura-n-tier-o-arquitectura-n.html
+ * http://geeks.ms/blogs/aarroyo/archive/2009/08/18/191-es-lo-mismo-arquitectura-por-capas-y-n-tier.aspx
+ * http://social.msdn.microsoft.com/Forums/es-ES/bd57093a-920d-4462-a185-605adc9f8594/3tier3layermvc?forum=aspnetmvces
+
