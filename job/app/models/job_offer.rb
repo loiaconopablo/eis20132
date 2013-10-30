@@ -8,7 +8,6 @@ class JobOffer
 	property :category, String
 	property :description, String
 	belongs_to :user
-	has n, :consultas
 
 	validates_presence_of :title
 
